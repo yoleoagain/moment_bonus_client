@@ -1,12 +1,21 @@
 ﻿import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
+import { Article } from 'ui/molecules/Article'
 
-const Home: NextPage = () => {
+const Wrapper = styled.main`
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+`
+
+const Admin: NextPage = () => {
   return (
-    <div>OPA</div>
+    <Wrapper>
+      
+    </Wrapper>
   )
 }
 
-export default Home
+export default Admin
